@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PostForm from "./components/PostForm";
-import { getPosts, deletePost, createPost } from "./api";
+import { getPosts, deletePost, createPost } from "./api"; // Make sure to update api.js too!
 import "./App.css";
 
 export default function App() {
@@ -39,7 +39,8 @@ export default function App() {
 
   async function handleSaveEdit(updatedPost) {
     try {
-      await fetch(`http://localhost:8080/api/posts/${updatedPost.id}`, {
+      // --- THIS URL HAS BEEN UPDATED ---
+      await fetch(`https://facebookapi-n8lt.onrender.com/api/posts/${updatedPost.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedPost),
@@ -91,7 +92,7 @@ export default function App() {
 
       <footer className="app-footer">
         <p>
-          built with ❤️ — <strong>facebook-posts-ui</strong>
+          <strong>facebook-posts-ui</strong>
         </p>
       </footer>
 
