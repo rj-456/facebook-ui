@@ -40,7 +40,7 @@ export default function App() {
   async function handleSaveEdit(updatedPost) {
     try {
       // --- THIS URL HAS BEEN UPDATED ---
-      await fetch(`https://facebookapi-n8lt.onrender.com/api/posts/${updatedPost.id}`, {
+      await fetch(`https://facebookapi-zo8g.onrender.com/api/posts/${updatedPost.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedPost),
