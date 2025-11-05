@@ -73,7 +73,7 @@ button[disabled] { opacity: 0.6; cursor: not-allowed; }
   aspect-ratio: 1 / 1;   /* Forces the box to be a square (1:1 ratio) */
   
   /* --- This fits your image *inside* the square --- */
-  object-fit: contain;   /* Fits the whole image, no cropping */
+  object-fit: cover;   /* Fits the whole image, no cropping */
   
   /* --- Optional: A background for the empty space --- */
   background-color: #f0f2f5; /* A light gray, or use #000 for black */
