@@ -68,6 +68,17 @@ button[disabled] { opacity: 0.6; cursor: not-allowed; }
 }
 .post .meta { font-size: 12px; color: var(--muted); }
 .post-image img {
+  /* --- This creates a responsive square --- */
+  width: 100%;           /* Make the box fill the width of the post */
+  aspect-ratio: 1 / 1;   /* Forces the box to be a square (1:1 ratio) */
+  
+  /* --- This fits your image *inside* the square --- */
+  object-fit: contain;   /* Fits the whole image, no cropping */
+  
+  /* --- Optional: A background for the empty space --- */
+  background-color: #f0f2f5; /* A light gray, or use #000 for black */
+
+  /* --- Keep your existing styles --- */
   max-width: 100%;
   border-radius: 6px;
   margin-top: 8px;
