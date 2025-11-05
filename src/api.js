@@ -1,4 +1,4 @@
-const API_BASE = "https://facebookapi-n8lt.onrender.com/api/posts";
+const API_BASE = "https://post-api-4gzj.onrender.com/api/posts";
 
 export async function getPosts() {
   const res = await fetch(API_BASE);
