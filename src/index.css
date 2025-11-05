@@ -67,16 +67,17 @@ button[disabled] { opacity: 0.6; cursor: not-allowed; }
   align-items: flex-start;
 }
 .post .meta { font-size: 12px; color: var(--muted); }
-.post-image img {
+/* Change the selector to this: */
+.post-card img {
   /* --- This creates a responsive square --- */
   width: 100%;           /* Make the box fill the width of the post */
   aspect-ratio: 1 / 1;   /* Forces the box to be a square (1:1 ratio) */
   
   /* --- This fits your image *inside* the square --- */
-  object-fit: cover;   /* Fits the whole image, no cropping */
+  object-fit: contain;   /* Fits the whole image, no cropping */
   
   /* --- Optional: A background for the empty space --- */
-  background-color: #f0f2f5; /* A light gray, or use #000 for black */
+  background-color: #f0f2f5; 
 
   /* --- Keep your existing styles --- */
   max-width: 100%;
